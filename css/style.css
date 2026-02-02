@@ -1,0 +1,167 @@
+/* Imports for Typography */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+
+:root {
+    /* Palette from Restaurant Landing Page */
+    --brand-brown: #4a2c2a;
+    --brand-cream: #f9f5f0;
+    --brand-accent: #d48166;
+    
+    /* UI Elements from Plant App */
+    --primary-green: #27ae60; 
+    --card-white: #ffffff;
+    --radius-lg: 24px;
+    --shadow-soft: 0 10px 30px rgba(74, 44, 42, 0.08);
+}
+
+body {
+    background-color: var(--brand-cream);
+    font-family: 'Inter', sans-serif;
+    color: var(--brand-brown);
+}
+
+h1, h2, h3, .brand-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Layout & Sidebar --- */
+.sidebar {
+    background: var(--brand-brown);
+    color: var(--brand-cream);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* --- Student 4: Sales Cards --- */
+.metric-card {
+    background: var(--card-white);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 4px solid var(--primary-green);
+}
+
+.icon-box {
+    width: 50px; height: 50px;
+    background: #eaf4ed;
+    color: var(--primary-green);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* --- Student 2: Menu Cards (Plant App Style) --- */
+.menu-card {
+    background: var(--card-white);
+    border-radius: var(--radius-lg);
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: var(--shadow-soft);
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-img-placeholder {
+    height: 140px;
+    background: #f1eadd;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 3rem;
+}
+
+.btn-add {
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 50%;
+    width: 35px; height: 35px;
+    border: none;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* --- Student 3: Order Panel --- */
+.order-panel {
+    background: var(--card-white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    height: 100%;
+    box-shadow: var(--shadow-soft);
+}
+
+.order-item {
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 0;
+}
+
+.btn-checkout {
+    background: var(--brand-brown);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-checkout:hover {
+    background: var(--brand-accent);
+}
+
+/* Live Clock Badge */
+#live-clock {
+    font-family: 'Inter', monospace;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Activity Feed Items */
+.activity-item {
+    font-size: 0.85rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: slideIn 0.3s ease-out;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-time {
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-left: auto;
+}
+
+.dot {
+    width: 8px; height: 8px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
