@@ -1,10 +1,11 @@
-# 👨‍🎓 CCS112 - Lab Exam
+# 👨‍🎓 CCS112 - Lab Exam (Group 3)
 
 ## ⚙ Instructions
 - @@@@@@@@@@@@@
 
 ## 📖 Description
-- @@@@@@@@@@@@@
+- This project focuses on practicing collaborative software development using Git and GitHub through a simulated team workflow. The system is a simple Karenderia Web App designed to represent basic daily operations of a small local eatery, including menu display, order handling, and daily sales tracking.
+- Each team member works on a specific feature in their own branch, while all changes are submitted through pull requests for review and testing.
 
 ### Team Leader
 - Responsible for setting up the project structure and GitHub repository, reviewing and testing team members’ work, and approving and merging completed features into the main branch to ensure system stability and quality.
