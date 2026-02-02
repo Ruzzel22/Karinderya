@@ -50,7 +50,7 @@ function checkout() {
     addOrderToHistory(newOrder);
 
     // 6. Update UI Metrics
-    document.getElementById('total-sales').innerText = '₱${dailySales.toFixed(2)}';
+    document.getElementById('total-sales').innerText = `₱${dailySales.toFixed(2)}`;
     document.getElementById('order-count').innerText = totalOrdersCount;
 
     // 7. Reset Cart (Modify 'cart' in menu.js)
@@ -100,7 +100,7 @@ function checkout() {
     totalOrdersCount += 1;
 
     const newOrder = {
-        id: '#ORD-${1000 + totalOrdersCount}',
+        id: `#ORD-${0 + totalOrdersCount}`,
         items: cart.map(i => i.name).join(", "),
         total: orderValue,
         status: "Completed"
@@ -108,13 +108,13 @@ function checkout() {
 
     addOrderToHistory(newOrder);
 
-    document.getElementById('total-sales').innerText = '₱${dailySales.toFixed(2)}';
+    document.getElementById('total-sales').innerText = `₱${dailySales.toFixed(2)}`;
     document.getElementById('order-count').innerText = totalOrdersCount;
 
     if (typeof updateCharts === "function") updateCharts();
 
     // >>> CALL THE NEW LOG FUNCTION <<<
-    logActivity('Order #${1000 + totalOrdersCount} completed.');
+    logActivity(`Order #${0 + totalOrdersCount} completed.`);
 
     cart.length = 0; 
     renderCart();
