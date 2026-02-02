@@ -1,9 +1,9 @@
 # 👨‍🎓 CCS112 - Lab Exam
 
-## Instructions
+## ⚙ Instructions
 - @@@@@@@@@@@@@
 
-## Description
+## 📖 Description
 - @@@@@@@@@@@@@
 
 ### Team Leader
@@ -21,7 +21,7 @@
 ### UI & Documentation
 - @@@@@@@@@@@@@
 
-## 🤼 Members
+## 👩‍💻 Members
 1. Ortiz, Alvin Matthew O.
 2. Silo, Anthony Carl D.
 3. Lucero, Zoe Journey E.
@@ -35,7 +35,7 @@
 11. Carag, Mark Vincent P.
 12. Fortin, Cheryll Anne V.
 
-## Technology Stack
+## 💻 Technology Stack
 - **Frontend:** HTML, CSS, JS
 - **Version Control:** Git
 - **Repository Hosting:** Github
